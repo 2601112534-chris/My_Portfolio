@@ -476,7 +476,13 @@ footer {
 
 @media (max-width: 900px) {
   #home {
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .home-text {
+    flex: none;
   }
 
   .four, .three {
