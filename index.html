@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="#home" class="logo">Christian's Portfolio</a>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="home-text">
+      <p class="small">HELLO, I'M</p>
+      <h1>Christian S. Bagnol</h1>
+      <a href="#contact" class="button">LET'S CONTACT</a>
+    </div>
+    <img src="assets/pp.jpg" alt="My profile picture" class="profile">
+  </section>
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <p class="about-text">
+      I am a first-year student at Bukidnon State University, taking up Bachelor of Science in Information Technology (BSIT).
+      Outside of school, I enjoy music, especially playing the guitar and the piano.
+      My goal is to finish this course, and after I graduate, I plan to apply as an instructor in a private school such as STI or SIC.
+      While teaching, I also plan to take my master's degree at the University of the Immaculate Conception.
+      In the future, I hope to teach in a university or go abroad.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>SKILLS</h2>
+    <div class="contact-box skill-box">
+      <div class="contact-card web">
+        <img src="assets/webdevicon.png" alt="webdev logo" class="skill-logo">
+        <span>Web Developing</span>
+      </div>
+      <div class="contact-card crossfire">
+        <img src="assets/crossfire.png" alt="Crossfire logo" class="skill-logo">
+        <span>Crossfire</span>
+      </div>
+      <div class="contact-card teamwork">
+        <img src="assets/teamwork1.avif" alt="teamwork logo" class="skill-logo">
+        <span>Teamwork</span>
+      </div>
+      <div class="contact-card adapt">
+        <img src="assets/adaptab.jpg" alt="Adaptability logo" class="skill-logo">
+        <span>Adaptability</span>
+      </div>
+      <div class="contact-card basprog">
+        <img src="assets/basprog.jpg" alt="basprog logo" class="skill-logo">
+        <span>Basic Programming</span>
+      </div>
+      <div class="contact-card design">
+        <img src="assets/simple1.png" alt="simple logo" class="skill-logo">
+        <span>Simple Graphic Design</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>PROJECTS</h2>
+    <div class="project-row">
+      <div class="box">
+        <img src="assets/cert2.PNG" alt="CSS Essentials certificate">
+        <h3>CSS Essentials Certificate</h3>
+        <p>CSS Essentials course completion from Cisco.</p>
+        <label for="cert1" class="view-btn">
+          VIEW CERTIFICATE
+        </label>
+      </div>
+      <div class="box">
+        <img src="assets/cert3.PNG" alt="Prompt Like an Engineer certificate">
+        <h3>PLE Certificate</h3>
+        <p>Prompt Like an Engineer course completion from Cisco.</p>
+        <label for="cert2" class="view-btn">
+          VIEW CERTIFICATE
+        </label>
+      </div>
+      <div class="box">
+        <img src="assets/cert.PNG" alt="HTML Essentials certificate">
+        <h3>HTML Essentials Certificate</h3>
+        <p>HTML Essentials course completion from Cisco.</p>
+        <label for="cert3" class="view-btn">
+          VIEW CERTIFICATE
+        </label>
+      </div>
+      <div class="box">
+        <img src="assets/unnamed.webp" alt="Business proposal website">
+        <h3>Business Proposal Website</h3>
+        <p>Our group's business proposal website after it was approved.</p>
+        <label for="cert4" class="view-btn">
+          VIEW PICTURE
+        </label>
+      </div>
+    </div>
+
+    <input type="checkbox" id="cert1" class="modal-toggle">
+    <div class="modal">
+      <label for="cert1" class="modal-backdrop"></label>
+      <div class="modal-panel">
+        <label for="cert1" class="modal-close">&times;</label>
+        <h3>CSS Essentials Certificate</h3>
+        <div class="modal-img-wrap">
+          <img src="assets/cert2.PNG" alt="CSS Essentials certificate">
+        </div>
+      </div>
+    </div>
+
+    <input type="checkbox" id="cert2" class="modal-toggle">
+    <div class="modal">
+      <label for="cert2" class="modal-backdrop"></label>
+      <div class="modal-panel">
+        <label for="cert2" class="modal-close">&times;</label>
+        <h3>PLE Certificate</h3>
+        <div class="modal-img-wrap">
+          <img src="assets/cert3.PNG" alt="Prompt Like an Engineer certificate">
+        </div>
+      </div>
+    </div>
+
+    <input type="checkbox" id="cert3" class="modal-toggle">
+    <div class="modal">
+      <label for="cert3" class="modal-backdrop"></label>
+      <div class="modal-panel">
+        <label for="cert3" class="modal-close">&times;</label>
+        <h3>HTML Essentials Certificate</h3>
+        <div class="modal-img-wrap">
+          <img src="assets/cert.PNG" alt="HTML Essentials certificate">
+        </div>
+      </div>
+    </div>
+
+    <input type="checkbox" id="cert4" class="modal-toggle">
+    <div class="modal">
+      <label for="cert4" class="modal-backdrop"></label>
+      <div class="modal-panel">
+        <label for="cert4" class="modal-close">&times;</label>
+        <h3>Business Proposal Website</h3>
+        <div class="modal-img-wrap">
+          <img src="assets/unnamed.webp" alt="Business proposal website">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>CONTACT</h2>
+    <p class="intro">Message me through my school email or social media.</p>
+    <div class="contact-box">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=2601112534@student.buksu.edu.ph" target="_blank" class="contact-card gmail">
+        <img src="assets/Gmail_icon_(2026).png" alt="Gmail logo" class="skill-logo">
+        <span>GMAIL</span>
+      </a>
+      <a href="tel:+639525477526" class="contact-card phone">
+        <img src="c:\Users\Administrator\Downloads\Phone_2025_logo.jpg" alt="Phone logo" class="skill-logo">
+        <span>+63 952 547 7526</span>
+      </a>
+      <a href="https://www.facebook.com/hydra0627" target="_blank" class="contact-card facebook">
+        <img src="assets/Facebook_icon_192.png" alt="Facebook logo" class="skill-logo">
+        <span>Facebook</span>
+      </a>
+      <a href="https://www.instagram.com/chr1sx.06" target="_blank" class="contact-card instagram">
+        <img src="c:\Users\Administrator\Downloads\1280px-Instagram_logo_2022.svg.webp" alt="Instagram logo" class="skill-logo">
+        <span>Instagram</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Christian S. Bagnol. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
