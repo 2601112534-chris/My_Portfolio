@@ -476,13 +476,7 @@ footer {
 
 @media (max-width: 900px) {
   #home {
-    flex-direction: column;
-    text-align: center;
-    min-height: auto;
-  }
-
-  .home-text {
-    flex: none;
+    flex-wrap: wrap;
   }
 
   .four, .three {
@@ -492,19 +486,38 @@ footer {
 
 @media (max-width: 600px) {
   header {
-    padding: 15px 20px;
+    padding: 12px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
   }
 
   nav a {
-    margin: 0 15px 0 0;
+    margin: 0 12px 0 0;
+    font-size: 14px;
   }
 
   section {
     padding: 100px 20px;
   }
 
+  /* home: stack the text on top of the photo so it all fits on one screen */
+  #home {
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+    min-height: calc(100svh - 80px);
+    padding: 30px 20px;
+  }
+
+  .home-text {
+    flex: none;
+  }
+
   h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .four, .three {
@@ -516,8 +529,8 @@ footer {
   }
 
   .profile {
-    width: 240px;
-    height: 320px;
+    width: 220px;
+    height: 280px;
   }
 
   .contact-box {
@@ -536,5 +549,22 @@ footer {
   .contact-card {
     width: 140px;
     height: 150px;
+  }
+}
+
+/* phone turned sideways (short screen) */
+@media (max-height: 500px) and (orientation: landscape) {
+  header {
+    padding: 10px 50px;
+  }
+
+  #home {
+    min-height: auto;
+    padding: 30px 50px;
+  }
+
+  .profile {
+    width: 200px;
+    height: 240px;
   }
 }
